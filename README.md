@@ -88,3 +88,27 @@ How to run:
 
 	`$ go run main.go`
     
+
+
+Chat:
+-----------------
+
+1. Once you start the server and client, you are asked to enter your name,
+once the name is provided, unique user-id will be created for you.
+
+2. Once you enter the chat room, You are provides with a notofication that you 
+entered into chat room and you can start chatting.
+
+3. If there are any history messages in the redis cache, it will be provided to you.
+
+4. if you want to delete a message that you have sent, enter following message
+
+    `:delete`
+
+    you will be asked to enter the message-ID, once that is provided, the message will be 
+    deleted from redis cache and notofication will be sent to all other clients to delte that message
+
+5. If you want to disconnect from the chat, enter following message
+
+    `:quit` 
+
